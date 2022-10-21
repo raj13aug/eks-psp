@@ -9,5 +9,5 @@ roleRef:
   name: psp-restrictive
 subjects:
 - kind: ServiceAccount
-  name: nginx
+  name: nginx-restrictive
   namespace: ns-demo
