@@ -5,12 +5,12 @@ kubectl apply -f namespace.yaml
 kubectl apply -f serviceaccount.yaml
 
 # Create the pod security policies
-kubectl apply -f psps/permissive.yaml
-kubectl apply -f psps/restrictive.yaml
+kubectl apply -f permissive.yaml
+kubectl apply -f restrictive.yaml
 
 # Create the roles
-kubectl apply -f roles/permissive-role.yaml
-kubectl apply -f roles/restrictive-role.yaml
+kubectl apply -f permissive-role.yaml
+kubectl apply -f restrictive-role.yaml
 
 # Create a restrictive rolebinding that will bind the restrictive
 # policy with all service accounts in the ns-demo namespace
