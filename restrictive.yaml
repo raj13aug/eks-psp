@@ -2,11 +2,6 @@ apiVersion: policy/v1beta1
 kind: PodSecurityPolicy
 metadata:
   name: restrictive
-  annotations:
-    seccomp.security.alpha.kubernetes.io/allowedProfileNames: "runtime/default"
-    apparmor.security.beta.kubernetes.io/allowedProfileNames: "runtime/default"
-    seccomp.security.alpha.kubernetes.io/defaultProfileName: "runtime/default"
-    apparmor.security.beta.kubernetes.io/defaultProfileName: "runtime/default"
 spec:
   privileged: false
   fsGroup:
