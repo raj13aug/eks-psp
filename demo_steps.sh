@@ -1,4 +1,4 @@
-# Delete the exisiting default PSP and clusterrolebinding
+# Delete the existing default PSP and clusterrolebinding
 
 kubectl delete podsecuritypolicy eks.privileged
 kubectl delete clusterrolebinding eks:podsecuritypolicy:authenticated
