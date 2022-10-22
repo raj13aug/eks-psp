@@ -1,3 +1,8 @@
+# Delete the exisiting default PSP and clusterrolebinding
+
+kubectl delete podsecuritypolicy eks.privileged
+kubectl delete clusterrolebinding eks:podsecuritypolicy:authenticated
+
 # Create a new namespace for the nginx deployment demo
 kubectl apply -f namespace.yaml
 
